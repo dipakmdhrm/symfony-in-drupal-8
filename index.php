@@ -293,7 +293,7 @@
           <section>
             <h2>Drupal 7 hooks</h2>
             <code>hook_node_delete()</code>
-            <img data-src="images/node-communication.jpg">
+            <img data-src="images/sub-system-communication.jpg">
           </section>
           <section>
             <h2>Drupal 7 hooks behind the scenes</h2>
