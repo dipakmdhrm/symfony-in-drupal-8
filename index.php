@@ -1,7 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/<?php print $_GET['theme'] ? $_GET['theme'] : 'white';?>.css">
+    <link rel="stylesheet" href="css/theme/<?php print $_GET['theme'] ? $_GET['theme'] : 'moon';?>.css">
     <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
@@ -297,7 +297,7 @@
           </section>
           <section>
             <h2>Drupal 7 hooks behind the scenes</h2>
-            <img data-src="images/hooks-behind-the-scenes.jpg">
+            <img data-src="images/hooks-behind-the-scenes.png">
           </section>
           <section>
             <h2>EventDispatcher in Drupal 8</h2>
