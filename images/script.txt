@@ -1,85 +1,105 @@
-Script:
-
-
-===============================================
-=================== OPENING ===================
-===============================================
+========================================
 **Confident Intro:**
-Hello everyone, I am Dipak.
+========================================
+Hello everyone
 
 Welcome to DrupalCon Vienna
 I hope you're having a good time.
+And that you're in the right room.
 
+========================================
 **Credentials:**
-My full name is Dipak Yadav.
-If you can't pronounce Dipak, you can call me DEEEPAAAK. That's what my American colleagues call me.
+========================================
+My name is Dipak Yadav.
+If you can't pronounce Dipak, you can call me DEEEPAAAK.
+That's what my American colleagues call me.
 
-I am from city named Pune in India.
+I am from Pune, a city in India.
 
 I am a PHP-Drupal Developer and I work for Rotary International.
 You can find me on most of the online places by my username 'dipakmdhrm'
 I am mostly active on Twitter, Drupal.org & Github.
 And I have a website... dipakyadav.com
 
+========================================
 **Hook**
+========================================
 Today I'll be talking about:
 
 Symfony in Drupal: How much and what does Drupal 8 Inherit from Symfony
 
-In this presentation I'll be talking about all the cool stuffs that's now in Drupal courtsey of Symfony.
-And while that will mostly involve talking about the symfony components, it won't be limited to that.
+In this presentation I'll be talking about all the cool stuffs that's now in Drupal courtesy of Symfony.
+And while that will mostly involve talking about the Symfony components, it won't be limited to that.
 
 We'll also see how by incorporating Symfony in Drupal, we've changed the way Drupal is developed. How Drupal is more modern tool than ever before. And how it has brought us closer to the rest of PHP world.
 
+========================================
+**Credible Statement**
+========================================
+Did you know that up until Drupal 7, all the PHP code in Drupal has homegrown and there was no external PHP Library?
+Whereas Drupal 8, when installed contains contains code from no less than 35 other PHP projects.
+
+I hope I have your attention because that's something we'll look into in addition to various other topics that we'll over.
+
+========================================
+**Who are you?**
+========================================
+But before that let's talk about who are you i.e. if you're really in right room:
+  You're a Drupal 7 developer
+  You're a Drupal 8 beginner
+  You want to learn something about Symfony Enthusiast
+  And you understand OOP Basics.
+    - At least objects.
+
+========================================
 **Agenda**
+========================================
 Here's the agenda for this talk.
 
 We'll start by taking a look at status of Drupal Development before D8.
 Then we'll go through a brief overview of Symfony
-Next we'll look into Philosophy of Symfony:
-  - How it has changed Drupal
 Symfony components in Drupal:
-  - How they're used and what they've changed
-
-**Credible Statement**
-**Glossary:**
-Before we begin, here's a list of terms I think we should get familiarized to:
-
-1. Controller
-2. PHP-FIG
-3. PSR
-4. REST
-
+- How they're used and what they've changed
+Other stuff in Drupal:
+Hopes and Wants
 
 
 ==================================================================
 ===================== Drupal Before Drupal 8 =====================
 ==================================================================
 *Drupal island and the NIE Mindset:*
-Before Drupal 8 if Drupal Development was our specialty, that meant we were a good Drupal Developer. It did not necessarily make us a good PHP developer. In fact, if we wanted to work on some other PHP project, say Symfony, we needed to learn a whole new skillset.
+Before Drupal 8 if Drupal Development was our specialty, that meant we were a good Drupal Developer. It did not necessarily make us a good PHP developer.
+---------------------------------------------------
 
-And, it was the same way around... A person with different skillset, again say Symfony, if they want to work on Drupal 7, they need to learn it from ground up...
+In fact, if we wanted to work on some other PHP project, say Symfony, we needed to learn a whole new skillset.
+---------------------------------------------------
+
+And, it was the same way around... A person with different skillset, again say Symfony, if they want to work on Drupal 7, they need to learn it from ground up and as a result learn stuff that's exclusive to Drupal.
+---------------------------------------------------
 
 And That was because Drupal had a unique way of doing almost everything. It was completely different than the rest of PHP world.
+---------------------------------------------------
 
 PHP had evolved. With PHP 5.3, PHP had all new shiny OOP concepts that almost every other PHP project had started using. But not Drupal.
+---------------------------------------------------
 
-In software world, especially in Open Source when solving problems, we look for existing solutions. These could be existing tools or design patterns that we can incorporate in our projects, so as to not re-invent the wheel.
+In software world, especially in Open Source when solving problems, we look for existing solutions. These could be existing tools or design patterns that we can incorporate in our projects so as to not re-invent the wheel.
 
-But that's not something Drupal was doing. Drupal was heavily hacked and a lots of workarounds were added to it to overcome the limitations of PHP during the PHP4 era. And this made it hard to adopt modern PHP standards, which in turn resulted in the Not Invented Here mindset in Drupal community. Because we were too busy working around the existing workarounds.
+But that's not something Drupal was doing.
+---------------------------------------------------
 
-In fact, Drupal 7 had no external PHP library. All the code in Drupal 7 was homegrown.
+A major part of Drupal Development was done around the PHP4 era. To overcome the limitations of PHP4 Drupal was heavily hacked and a lots of workarounds were added to it. And this in turn made it hard to adopt modern PHP standards. And that was in a big way responsible for "Not Invented Here" mindset in Drupal community. Because we were too busy working around the existing workarounds.
+---------------------------------------------------
 
 In a way, Drupal had been living on it's own island. Drupal needed to get off this island and join the PHP Mainland.
+---------------------------------------------------
 
 **Drupal 8: Getting off the island and PFE;**
 And that's what started happening with development of Drupal 8.
 
 Some prominent and influential members in Drupal community started realizing that Drupal was falling behind. Drupal needed to evolve and adapt to the modern world of PHP.
 
-I would say that one of the major steps towards this was Drupal becoming a member of PHP-FIG.
-
-Due to hard work of many people, Drupal has now embraced the Proudly Found Elsewhere mindset.
+Due to hard work of these people, Drupal has now embraced the Proudly Found Elsewhere mindset.
 It now uses code from a number of other PHP projects.
 Some of them are:
 1. Symfony
@@ -95,10 +115,17 @@ So let's talk about that.
 =================================================================
 ==================== Introduction to Symfony ====================
 =================================================================
-Symfony is a set of PHP Components, a Web Applicaiton framework, a Philosophy and a Community: all working together in harmony.
+Symfony is a set of PHP Components, a Web Application framework, a Philosophy and a Community: all working together in harmony.
+
+To someone new it might seem like Symfony has multiple personality disorder.
+How can it be may things at a time.
+
+And this is a cause a misconception in many people's ming in Drupal community.
+
+Symfony components and Symfony Framework are two different things.
+---------------------------------------------------
 
 **Let's start with Symfony Components:**
-
 Components is a fancy word used by Symfony. Components are simply PHP libraries.
 They are just directories that have PHP files in them that you can use.
 There are a bunch of these Symfony components... 54 when I counted
@@ -112,37 +139,22 @@ Some example of these components are:
 2. Form component: which can be used to create, process and use HTML forms.
 3. HttpFoundation component: which can be used for simple request response flow in your application.
 
+Drupal 8's core has been built using many of these components.
+-----------------------------------------------------
 
 **Symfony Framework:**
 
-is a PHP framework built using these components.
-And in additional to these components, it also has PHP libraries from other projects. Like Twig for templating and Swiftmailer for mail functionality.
+Is a PHP framework built using 35 such components. just like Drupal 8 is built using these components.
+And in additional to these components, it also has PHP libraries from other projects. Like Twig for templating and Swiftmailer for mail functionality etc.
 
 It in itself is a fully functional applicaiton. And is meant to be used as a skeleton or starting point for your application.
+-----------------------------------------------------
 
-Symfony framework is different from Drupal in the sense that Drupal is a full-fledged CMS with a lots of built in features.
-Whereas, Symfony framework, while fully functional in it's own, is pretty useless for almost all scenarios
-It is meant to be customized and extended.
+**Drupal vs Symfony Framework**
 
-
-==============================================================================
-======================= Symfony Philosophy & Community =======================
-==============================================================================
-**Philosophy:**
-Symfony is considered as one of the best PHP frameworks. And the credit for it, in a large part, goes to the philosophy it adheres to.
-
-
-
-**Symfony Community:**
-Symfony has a huge active developer community.
-There are over 2000 plus active contributors and more than 300,000 Symfony Developers.
-And just like DrupalCamps and Cons, Symfony community also organizes such events regularly.
-Here are some of the recent and upcoming Symfony events.
-
-
-
-
-
+Symfony framework is different from Drupal in the sense that:
+- Drupal is a full-fledged CMS with a lots of ready-made, built-in features.
+- Whereas, Symfony framework doesn't come with these. It is meant to be customized and extended using.
 
 ==================================================================
 ======================= Symfony Components =======================
@@ -168,247 +180,305 @@ We'll also look into Console component. What Drupal uses it for.
 
 And I'll be cheating a little bit with the last two. They're not actually symfony components. But Symfony is in a way reponsible for bringing them in.
 
-
+================================================================
 **HttpFoundation:**
-  Virtually all communication over World Wide Web is done using HTTP.
-  What's HTTP.
+================================================================
+Virtually all communication over World Wide Web is done using HTTP.
+What's HTTP.
+-----------------------------------------------------------
 
-  A client sends a request to server.
-  And server sends back appropriate response.
+A client sends a request to server.
+And server sends back appropriate response.
+-----------------------------------------------------------
 
-  Majority of web frameworks implement a design pattern called front controller to handle HTTP communication.
+Majority of web frameworks implement a design pattern called front controller to handle HTTP communication.
 
-  A front controller is a file or an object that receives the request and sends back the response.
-  It controls the request response flow.
+A front controller is a file or an object that receives the request and sends back the response.
+It controls the request response flow.
 
-  Even Drupal has it's front controller.
-  It's index.php.
+Even Drupal has it's front controller.
+It's index.php.
 
-  All request are passed through index.php
+All request are passed through index.php
 
-  In Drupal 7 however, index.php does not have full control over the request response flow.
+In Drupal 7 however, index.php does not have full control over the request response flow.
+-----------------------------------------------------------
 
-  Let's look at the code.
-  index.php passes the control to the `menu_execute_active_handler()` function.
-  Which in turns identifies the callback function and passes control to it.
-  And then the callback function is responsible for sending back the response.
+Let's look at the code. Especially the last line.
+-----------------------------------------------------------
+index.php passes the control to the `menu_execute_active_handler()` function.
+Which in turns identifies the callback function and passes control to it.
+And then the callback function is responsible for sending back the response.
+-----------------------------------------------------------
 
-  Whereas in Drupal 8
-  A request object is created with all the request information.
-  It is passed to the handle() function. Which passes the control to appropriate controller.
-  However, the controller must return a response object.
-  And then index.php sends the response back.
-  Index.php, the front controller, maintains control over the request response flow.
+Whereas in Drupal 8
+A request object is created with all the request information.
+It is passed to the handle() function. Which passes the control to appropriate controller.
+However, the controller must return a response object.
+And then index.php sends the response back.
+-----------------------------------------------------------
 
-  This has been made possible by Symfony's HTTPFoundation component.
-  It provides Drupal with these two objects.
-  Request & Response.
+This is how it looks.
+Index.php, the front controller, maintains control over the request response flow.
+-----------------------------------------------------------
 
-  Request object gathers all the request info PHP globals like $_GET, $_SERVER etc.
-  Response object provides a way to set the appropriate content, status and header info and send the response back.
+This has been made possible by Symfony's HTTPFoundation component.
+It provides Drupal with these two objects.
+Request & Response.
+-----------------------------------------------------------
 
-  One more thing to look into here is that Drupal 7, being a Web CMS, was built with focus on returning a response for a Web Browser. So it was built to process GET requests.
-  But HTTP is not limited to that. HTTP has other methods like POST, PUT, DELTE etc.
+Request object gathers all the request info PHP globals like $_GET, $_SERVER etc.
+-----------------------------------------------------------
+Response object provides a way to set the appropriate content, status and header info and send the response back.
+-----------------------------------------------------------
 
-  And because of this Drupal 7 had poor to no support for creating REST APIs.
-  We had to depend on contrib modules like services.
+One more thing to look into here is that Drupal 7, being a Web CMS, was built with focus on returning a response for a Web Browser. So it was built to process GET requests.
+But HTTP is not limited to that. HTTP has other methods like POST, PUT, DELTE etc.
 
-  Drupal 8 is API first.
-  Again made possible by HTTPFoundation. Request and Response object has been made to fully support the REST API calls.
+And because of this Drupal 7 had poor to no support for creating REST APIs.
+We had to depend on contrib modules like services.
 
+Drupal 8 is API first. It supports all these methods.
+And this has been made possible by a combination of HTTPFoundation and Routing components.
+
+===========================================================
 **Routing**
+===========================================================
 
-  Routing is a process to match a request path to a "callback function", or a "controller" that then processes that request.
+Routing is a process to match a request path to a "callback function", or a "controller" that then processes that request.
 
-  This map from the path to the controller is called a *Route*.
+This map from the path to the controller is called a *Route*.
+-----------------------------------------------------------
 
-  In Drupal 7,
-  a route was defined using hook_menu():
+In Drupal 7,
+a route was defined using hook_menu():
 
-  So in this example this route, maps the request for `my/awesome/path` to `my_awesome_callbak`.
+So in this example this route, maps the request for `my/awesome/path` to `my_awesome_callbak`.
+-----------------------------------------------------------
 
-  And when the request came to index.php, it passes it to `menu_execute_active_handler`, which used `menu_get_item()` to get the callback.
+And when the request came to index.php, it passes it to `menu_execute_active_handler`,
+-----------------------------------------------------------
+which used `menu_get_item()` to get the callback.
 
-  And that callback is then executed to send a response back.
+And that callback is then executed to send a response back.
+-----------------------------------------------------------
 
-  In Drupal 8 we use Symfony's Routing component.
+In Drupal 8 we use Symfony's Routing component.
 
-  It allows us to define a route in symfony.yml.
-  So in this example this route, maps the request for `another/awesome/path` to `awesomeController`
+It allows us to define a route in symfony.yml.
+So in this example this route, maps the request for `another/awesome/path` to `awesomeController`
+-----------------------------------------------------------
 
-  So when a rquest comes to index.php, handle() function passes the it to routing system for routing.
+So when a rquest comes to index.php, handle() function passes the it to routing system for routing.
+-----------------------------------------------------------
 
-  This is how it looks.
+This is how the flow of it looks.
+-----------------------------------------------------------
 
-  Now let's see the internals of routing.
-  Basic routing is done using these three objects.
-  1. RouteCollection: which has the collection of all the routes in system. This is similar to Drupal 7's menu registry.
-  2. RequestContext: which has all the info about request like path and method.
-  3. Matcher: which does the actual mapping from path to controller based on the information in RequestContext and RouteCollection
+Now let's see the internals of routing.
+Basic routing is done using these three objects.
+1. RouteCollection: which has the collection of all the routes in system. This is similar to Drupal 7's menu registry.
+2. RequestContext: which has all the info about request like path and method.
+3. Matcher: which does the actual mapping from path to controller based on the information in RequestContext and RouteCollection
 
-  And because now Drupal is API first, we can have multiple route for a single path but for different method.
+And because now Drupal is API first, we can have multiple route for a single path but for different method.
 
-  That's the basic of routing.
+That's the basic of routing.
 
+===========================================================
 **EventDispatcher**
-  Any application, consists of various parts or sub-systems.
-  For eg. in Drupal Node and Comments are 2 subsystems.
-  And usually sub-systems need a way to communicate with each other.
-  Eg. of communication: A node is being deleted. Node communicates that to comment. And Comment module deletes comments on that node.
+===========================================================
 
-  Do we have any guesses how it's done in Drupal 7?
+Any application, consists of various parts or sub-systems.
+For eg. in Drupal, Node and Comments are 2 subsystems.
+And usually sub-systems need a way to communicate with each other.
+Eg. of communication: A node is being deleted. Node communicates that to comment. And Comment module deletes comments on that node.
 
-  Yep...
+Do we have any guesses how it's done in Drupal 7?
 
-  In Drupal7, Hooks are the way for modules with communicate with each other.
-  And if you look more deeply... It's actually the functions that are communicating...
-  node_delete() communicates with comment_node_delete().
+Yep...
+-----------------------------------------------------------
 
-  And this is how it happens:
+In Drupal7, Hooks are the way for modules with communicate with each other.
+And if you look more deeply... It's actually the functions that are communicating...
+node_delete() communicates with comment_node_delete().
+-----------------------------------------------------------
 
-  node_delete() calls module_invoke_all() which gathers all hooks implementing node_delete, which includes the comment_node_delete(), and then executes them.
+And this is how it happens:
 
-  In Drupal 8, instead of function we have objects. And these objects may also need to communicate with each other.
-  `EventDispatcher` is the component that gives us a way to do that.
+node_delete() calls module_invoke_all() which gathers all hooks implementing node_delete, which includes the comment_node_delete(), and then executes them.
+-----------------------------------------------------------
 
-  `EventDispatcher` introduces the concept of *Events* to Drupal.
+In Drupal 8, instead of function we have objects. And these objects may also need to communicate with each other.
+`EventDispatcher` is the component that gives us a way to do that.
 
-  Event is any action that an object needs to communicate to other objects.
-  So node deletion would be an event.
+`EventDispatcher` introduces the concept of *Events* to Drupal.
 
-  And this is how the communication happens in Drupal 8.
+Event is any action that an object needs to communicate to other objects.
+So node deletion would be an event.
+-----------------------------------------------------------
 
-  EventDispatcher introduces a central EventDispatcher object that is reponsible for communication between the objects.
+And this is how the communication happens in Drupal 8.
 
-  An object executing an event tells the central EventDispatcher object about it. In this case node_delete().
+EventDispatcher introduces a central EventDispatcher object that is reponsible for communication between the objects. A mediator.
+------------------------------------------------------------
 
-  Other objects who want to know about this event so that they can respond to the event in some way register themselves to the EventDispatcher as listeners.
+Objects that want to take action on an event, register themselves to EventDispatcher as listeners of the event.
+------------------------------------------------------------
 
-  When the event is actually executed, EventDispatcher informs all these object.
-  This is called dispatching the event to the listeners.
+An object executing an event tells the central EventDispatcher object about it. In this case node telling about deletion.
+------------------------------------------------------------
 
-  The listeners then can appropriate action.
+EventDispatcher informs all the listeners about this event.
+This is called dispatching the event to the listeners.
 
-  Some example of events are:
+The listeners then can take appropriate action.
+------------------------------------------------------------
 
-  Drupal 8 has both Hooks and Events.
-  It might seem like Drupal 8 has best of both worlds.
-  Id doesn't.
-  In large part, these hooks are the reason Drupal is still not fully Object Oriented.
-  I believe, Event system would eventually replace the Hook system.
-  But not anytime soon. Maybe in Drupal 9 or 10.
+Some example of events are:
+------------------------------------------------------------
 
+Drupal 8 has both Hooks and Events.
+It might seem like Drupal 8 has best of both worlds.
+It doesn't.
+In large part, these hooks are the reason Drupal is still not fully Object Oriented.
+I believe, Event system would eventually replace the Hook system.
+But not anytime soon. Maybe in Drupal 9 or 10.
+
+===========================================================
 **DependencyInjection:**
+===========================================================
 
-  DependencyInjection component introduces some major new concepts to Drupal.
-  Namely,
+DependencyInjection component introduces some major new concepts to Drupal.
+Namely,
 
-  Services, Service container and Dependency Injection.
+Services, Service container and Dependency Injection.
+-----------------------------------------------------------
 
-  *Services:*
-  As we've repeatedly stated Drupal is now OO. And Being object oriented, Drupal 8 has a lot of objects. Many of these objects and their methods are useful throughout the application.
+*Services:*
+As we've repeatedly stated Drupal is now OO. And Being object oriented, Drupal 8 has a lot of objects. Many of these objects and their methods are useful throughout the application.
 
-  Eg. A Database object.
+Eg. A Database object.
 
-  Services is just another fancy term used by Symfony, and now Drupal, to refer to these useful objects. So Database is now a service in Drupal.
+Services is just another fancy term used by Symfony, and now Drupal, to refer to these useful objects. So Database is now a service in Drupal.
 
-  Objects are define in php files but are registered as a service by adding them in services.yml file.
+Objects are define in php files but are registered as a service by adding them in services.yml file.
+-----------------------------------------------------------
 
-  Some example of services in Drupal core are:
+Some example of services in Drupal core are:
+1. FormBuilder object that provides methods like getFrom to load a form and buildForm to build a from.
+2. UserAuth object that provides authenticate method to authenticate a user.
+3. DBLog object that provides the log() method to add logs. It replaces the watchdog() function.
+4. Other examples include current_user and database services.
+-----------------------------------------------------------
 
-  1. FormBuilder object that provides methods like getFrom to load a form and buildForm to build a from.
-  2. UserAuth object that provides authenticate method to authenticate a user.
-  3. DBLog object that provides the log() method to add logs. It replaces the watchdog() function.
-  4. Other examples include current_user and database services.
+*Service container:*
+Service container is a special object provided by the dependencyInjection component that provides a way to fetch these services when required.
+This can be done using the get() method and passing the service's identifier to it.
+$container->get('service.id');
 
-  *Service container:*
-  Service container is a special object provided by the dependencyInjection component that provides a way to fetch these services when required.
-  This can be done using the get() method and passing the service's identifier to it.
-  $container->get('service.id');
+Service container gathers information about all the services defined in all `services.yml` files
+Service container uses this information to create services.
+-----------------------------------------------------------
 
-  Services are defined in `services.yml` with all teh needed information.
-  Service container uses this information to create services.
+*Dependency Injection:*
+Now, we talked about services as useful objects.
+But since almost Everything in Drupal is now an object, most of the times it would be an object using these services.. i.e. object using another object.
 
-  *Dependency Injection:*
-  Now, we talked about services as useful objects.
-  But since almost Everything in Drupal is now an object, most of the times it would be an object using these services.. i.e. object using another object.
+i.e. 1st object is dependent on 2nd object.
 
-  i.e. 1st object is dependent on 2nd object.
+-----------------------------------------------------------
 
-  Concept of Dependency Injection says that the first object should not create the dependent object, instead 2nd object should be passed to it. or injected to it.
+Concept of Dependency Injection says that the first object should not create the dependent object
+-----------------------------------------------------------
+instead 2nd object should be passed to it. or injected to it.
+-----------------------------------------------------------
 
-  2 major reasons:
-  1. 1st object shouldn't be concerned about how to create the 2nd object
-  2. It helps with UNIT testing.
+2 major reasons:
+1. 1st object shouldn't be concerned about how to create the 2nd object
+2. It helps with UNIT testing.
+-----------------------------------------------------------
 
-  Service container takes care of injecting the dependencies (or services). and thus it is also called as dependency injection container.
+Service container takes care of creating services & injecting the dependencies (or services). and thus it is also called as dependency injection container.
+-----------------------------------------------------------
 
-  Now... I said that almost everything in Drupal is an object... Which means some things are not...
-  Eg. hooks... They are still there...
-  And dependency injection container is useless there...
-  What's Drupal's solution?
+Now... I said that almost everything in Drupal is an object... Which means some things are not...
+Eg. hooks... They are still there...
+And dependency injection container is useless there...
+What's Drupal's solution?
+-----------------------------------------------------------
 
-  Another container...
-  Drupal static contaner.
-  \Drupal::service('service.id')
+Another container...
+Drupal static contaner.
+\Drupal::service('service.id')
 
-  Should not be used if possible... Will make your code untestable.
+Should not be used if possible... Will make your code untestable.
 
-
+=================================================================
 **DrupalKernel:**
-  We looked into Routing, Services, Service container and other stuff...
-  All of those are pretty independent and loosely coupled.
+=================================================================
+We looked into Routing, Services, Service container and other stuff...
+All of those are pretty independent and loosely coupled.
 
-  It's the job of DrupalKernel to put everything together.
+It's the job of DrupalKernel to put everything together. It's the core of Drupal.
+It is extended from HTTPKernelInterface provided by HTTPKernel component.
+-----------------------------------------------------------
 
-  DrupalKernel is the first object that's created in Drupal.
+DrupalKernel is the first object that's created in Drupal.
+-----------------------------------------------------------
 
-  Among other things, it is responsible for:
-  1. Creating the service container.
-  2. Adding services to it, so that they are available for use later.
-  3. Passing the request handling to routing system
+Among other things, it is responsible for:
+1. Creating the service container.
+2. Adding services to it, so that they are available for use later.
+3. Passing the request handling to routing system
+-----------------------------------------------------------
 
-  Interface for DrupalKernel is provided by Symfony's HTTPKernel component.
-
+======================================================
 **Drupal Console:**
-  Ok.. I assume everyone here is familiar with Drush...
-  Drush is basically a command line tool for Drupal.
-  It allows us to communicate with Drupal over command line interface.
+======================================================
+Ok.. I assume everyone here is familiar with Drush...
+Drush is basically a command line tool for Drupal.
+It allows us to communicate with Drupal over command line interface.
 
-  Symfony also provides a command line tool. It's called console and is provided by the console component.
+Symfony also provides a command line tool. It's called console and is provided by the console component.
+-----------------------------------------------------------
 
-  Drupal 8 now has Drupal Console. It is symfony's console modified for Drupal.
+Drupal 8 now has Drupal Console. It is symfony's console modified for Drupal.
 
-  In it's present state, it's used mostly for Debugging and Generating skeleton code.
+In it's present state, it's used mostly for Debugging and Generating skeleton code.
 
-  It doesn't come bundled with Drupal.
+It doesn't come bundled with Drupal.
 
-  But it can be installed via composer. Either locally for a single project or globally on your machine or server for all Drupal projects.
+But it can be installed via composer. Either locally for a single project or globally on your machine or server for all Drupal projects.
+-----------------------------------------------------------
 
-  Here are some commands that can be used:
-    - generate:module: Generates skeleton code for a module
-    - generate:controller: Generates skeleton code for a controller
-    - generate:form: Generates skeleton code for a form
-    - debug:container: Lists all services
-    - debug:permission: Lists all permissions
-    - debug:update: Lists all available updates
+Here are some commands that can be used:
+- generate:module: Generates skeleton code for a module
+- generate:controller: Generates skeleton code for a controller
+- generate:form: Generates skeleton code for a form
+- debug:container: Lists all services
+- debug:permission: Lists all permissions
+- debug:update: Lists all available updates
 
-  Personally I love the generate commands. Instead of writing every line of code myself I can generate the basic structure and then take it from there. Generate commands present with you a command line wizard that asks you various questions based on which it generates the code. For example, for the `generate:module` command, it asks for module name, machine name, package, whether to create a Unit Test class, or if we want to add dependencies and generate composer.json etc.
+Personally I love the generate commands. Instead of writing every line of code myself I can generate the basic structure and then take it from there. Generate commands present with you a command line wizard that asks you various questions based on which it generates the code. For example, for the `generate:module` command, it asks for module name, machine name, package, whether to create a Unit Test class, or if we want to add dependencies and generate composer.json etc.
 
-  Now, this does not mean that console has replaced drush.
-  Drush is still there and it is still more powerful than console. And it is supported by more contrib modules.
+Now, this does not mean that console has replaced drush.
+Drush is still there and it is still more powerful than console. And it is supported by more contrib modules.
 
-  However, this would change in future.
+However, this would change in future.
 
-  Drupal console is also object oriented. And it has better support for symfony components.
+Drupal console is also object oriented. And it has better support for symfony components.
 
-  As developement of Drupal 8 progresses, it would be easier to write console commands than writing drush commands.
+As developement of Drupal 8 progresses, it would be easier to write console commands than writing drush commands.
 
-  Though, currently, it co-exists with Drush, I believe it will replace Drush eventually.
+Though, currently, it co-exists with Drush, I believe it will replace Drush eventually.
 
+===========================================================
+Other inherited Stuff
+===========================================================
 
+**Twig: New template engine**
 
-**Template system with Twig:**
 - A Template system is responsible for combining data and layout to create presentable pages.
 - Ideally a template system should keep the logic of creating/obtaining data separate from the layout.
 - Drupal 7 used PHPTemaplate for its template system where this was hardly the case.
@@ -418,38 +488,107 @@ Drupal 8 uses Twig:
 
 
 
-**PHPUnit**
-- Ok, so I've included this in my presentation, but everything I say about it should be taken with a grain of salt.... Because, honestly, I've never written a Unit Test in my life...
-Don't judge me....
-Anyway, this is what I know about Unit Testing in Drupal:
+**PHPUnit: Unit Testing**
 
-Drupal 7:
-Drupal 7 used SimpleTest exclusively.
-There are more than
-If you're like me and have never written a Unit Test yourself, you can seen this in action on Drupal issues.
-Whenever someone uploads a patch to a Drupal issue, all the tests are run against that patch.
+- Ok, so I've included this in my presentation
+  But everything I say about it should be taken with a grain of salt.... Because, honestly, I've never written a Unit Test in my life...
+  Don't judge me....
+  Anyway, this is what I know about Unit Testing in Drupal:
 
-Here are some examples:
 
-All those are written in SimpleTest.
 
-Drupal 8 uses both SimpleTest and PHPUnit.
-Since there were thousands of test already written in SimpleTest, and converting them to PHPUnit overnight was not possible, the strategy Drupal 8 adopted was to Write all new tests in PHPUnit.
-And over the time convert the tests written in SimpleTest to PHPUnit.
+*Drupal 7:*
 
-So eventually, it will just be PHPUnit. and No simpletest in Drupal.
+- Drupal 7 used SimpleTest exclusively.
+  There are more than
+  If you're like me and have never written a Unit Test yourself, you can seen this in action on Drupal issues.
+  Whenever someone uploads a patch to a Drupal issue, all the tests are run against that patch.
 
-And with that, I believe I've covered everything I wanted to.
+  Here are some examples:
 
+  All those are written in SimpleTest.
+
+*Drupal 8*
+
+- Uses both SimpleTest and PHPUnit.
+  Since there were thousands of test already written in SimpleTest, and converting them to PHPUnit overnight was not possible, the strategy Drupal 8 adopted was to Write all new tests in PHPUnit.
+  And over the time convert the tests written in SimpleTest to PHPUnit.
+
+  So eventually, it will just be PHPUnit. and No simpletest in Drupal.
+
+  And with that, I believe I've covered everything I wanted to.
+
+**Easier upgrades:**
+
+- Ask about upgrades??????????????
+
+- Drupal upgrades have been a major cause of pain for us.
+
+  Upgrades between major versions i.e. 6-7 & 7-8 have been quite challenging. Both in terms of learning curve and the upgrade path. We've had to do complete rebuild of our web applications.
+
+  This changes with Drupal 8 and up.
+
+  Now Drupal does two kind of upgrades.
+  Minor and Major.
+
+  Minor upgrades are 8.1-8.2, 8.2-8.3 and so on.
+  These upgrades will be every 6 months.
+  These will include new features and backward compatible changes.
+  These will also include deprecating old changes.
+    For eg. If we need to rename a method, we will keep both the old method and the new method. However, the old method will be marked deprecated and E_DEPRECATED warning will be thrown.
+    But we wont be removing it. So as not to break anything.
+  So all the big changes would be between the minor upgrades.
+
+  And when the time for major version release comes, it won't include any new feature.
+  However it will remove all these deprecated systems.
+
+  Advantages of this would be:
+  --- We'll keep getting new features periodically.
+  --- We'll have enough time to shed the old deprecated system instead of getting surprised by the major release.
+
+  And where does Drupal gets this semantic versioning. From symfony framework
+
+===========================================================
+Other Stuff I want it to inherit
+===========================================================
+
+**Symfony's philosophy of Loosely coupled independent parts:**
+
+- Drupal is a big monolithic system.
+  The symfony components that Drupal is based on are loosely coupled.
+  But the parts of Drupal, the sub systems, themselves are not.
+  The way Drupal has been written, they are heavily intermingled.
+
+  I wish Drupal sub-systems were independent as well.
+
+  Imagine you're working on a non-Drupal PHP project. You want to use Drupal's concept of entities. How wonderfully convenient it would be if it's available as a separate package via composer.
+  Not just entities imagine other systems as well, Taxonomy, fields, menu system.
+
+  That's something I would be really pleased to see.
+
+**More PSRs (specifically PSR1 & PSR2):**
+
+- I am pretty sure I am not the only one here who is weirded out by a
+  different code style in other PHP libraries.
+
+  If you've looked into Symfony or some other PHP project, you might have noticed.
+  Braces on next line of function declaration.
+  4 spaces of indentation..????
+
+  What that's weird...
+
+  Nope... That's not... At least not for projects following PSR guidelines.
+
+  Every time you have to change your IDE or text editor's configuration to math the styling.
+
+  If Drupal (and all other PHP projects) start adhering to these standards, it won't be a challenge.
+
+==============================================================
 **Conclusion**
-In conclusion:
-- Drupal 8 is a complete overwrite of Drupal 7 under the hood.
-- In addition to code, Drupal 8 also inherits Symfony's philosophy for better.
-- We saw that core sub-systems of Drupal 8 are heavily built on Symfony components. And we did a high level overview of some of them.
-
-Before we end...
-I came across this tweet a couple of months ago... I strongly agree with it and I am sure many of you do too.
-And for the same reason, I've included a list of resources you can refer to to learn more about these.
+==============================================================
+Drupal uses symfony components, not symfony framework
+HttpFoundation, Routing help Drupal 8 become API-first
+HttpFoundation, Routing, EventDispatcher, DependencyInjection & DrupalKernal form the core of Drupal 8
 
 **Discussions**
 That's all... Anything we'd like to discuss.
