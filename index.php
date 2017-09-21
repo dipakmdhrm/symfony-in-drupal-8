@@ -42,7 +42,7 @@
           <h3>Dipak Yadav</h3>( @dipakmdhrm )
         </section>
         <section>
-          <h2>D7 1 - 38 D7</h2>
+          <h2>D7 1 - 38 D8</h2>
           <img src="images/35-projects.png">
         </section>
         <section>
