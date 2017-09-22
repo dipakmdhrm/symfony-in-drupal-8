@@ -42,7 +42,7 @@
           <h3>Dipak Yadav</h3>( @dipakmdhrm )
         </section>
         <section>
-          <h2>D7 1 - 38 D8</h2>
+          <h2>D7 &nbsp;1 &nbsp;&nbsp;-&nbsp;&nbsp; 38&nbsp; D8</h2>
           <img src="images/35-projects.png">
         </section>
         <section>
@@ -66,8 +66,8 @@
               <li>Drupal development before Drupal 8</li>
               <li>Introduction to Symfony</li>
               <li>Symfony Components in Drupal 8</li>
-              <li>Other stuff</li>
-              <li>Hopes and Wants</li>
+              <li>Drupal 8: Philosophical Changes</li>
+              <li>Personal thoughts</li>
             </ul>
           </div>
         </section>
@@ -185,22 +185,24 @@
           </section>
         </section>
         <section>
-          <h2>Symfony Components in Drupal 8</h2>
-        </section>
-        <section>
-          <h3>Symfony Components in Drupal</h3>
-          <ul>
-            <li>HttpFoundation</li>
-            <li>Routing</li>
-            <li>EventsDispatcher</li>
-            <li>DependencyInjection</li>
-            <li>HttpKernel</li>
-            -------------------
-            <li>Console</li>
-            -------------------
-            <li>Twig</li>
-            <li>PHPUnit</li>
-          </ul>
+          <section>
+            <h1>Symfony Components in Drupal 8</h1>
+          </section>
+          <section>
+            <h3>Symfony Components in Drupal</h3>
+            <ul>
+              <li>HttpFoundation</li>
+              <li>Routing</li>
+              <li>EventsDispatcher</li>
+              <li>DependencyInjection</li>
+              <li>HttpKernel</li>
+              -------------------
+              <li>Serializer</li>
+              <li>Validator</li>
+              <li>Yaml</li>
+              <li>Console</li>
+            </ul>
+          </section>
         </section>
         <section>
           <section>
@@ -527,6 +529,99 @@
         </section>
         <section>
           <section>
+            <h2>Serializer</h2>
+          </section>
+          <section>
+            <h3>Serialization</h3>
+            <ul>
+              <li>Process of translating data structures to a format that can be easily stored and transmitted.
+                <ul>
+                  <li>And vice versa</li>
+                </ul>
+              </li>
+              <li>
+                In Drupal, mostly used for serialization of objects.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Serialization component in Drupal 8</h3>
+            <ul>
+              <li>Heavily used in Drupal 8 APIs</li>
+              <li>Drupal web services modules
+                <ul>
+                  <li>Serialization, RESTful Web Services</li>
+                </ul>
+              </li>
+              <li>Serializer component for converting objects to JSON/XML
+                <ul>
+                  <li>And vice versa</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Validator</h2>
+          </section>
+          <section>
+            <h3>Validator component</h3>
+            <ul>
+              <li>Used to validate values based on rules</li>
+              <li>Generally used for form validation</li>
+              <li>Allows to create:
+                <ul>
+                  <li>Constraints: Rules
+                    <ul>
+                      <li>Eg. length, email, link</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Validators: Objects
+                    <ul>
+                      <li>Can act on basis of values following/violating constraints.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Validator in Drupal 8</h3>
+            <li>Used to create constraints for form fields of various types
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Yaml</h2>
+          </section>
+          <section>
+            <h3>YAML</h3>
+            <ul>
+              <li>YAML: YAML Ain't Markup Language</li>
+              <li>Humal readable serialization language</li>
+              <li>Commonly used to store configuration</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Yaml Component</h3>
+            <ul>
+              <li>Allows parsing and dumping YAML files</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Yaml in Drupal 8</h3>
+            <ul>
+              <li>{module}/{theme}.info.yml</li>
+              <li>routing.yml</li>
+              <li>services.yml</li>
+              <li>Configuration (eg. views are now configuration)</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
             <h2>Console</h2>
           </section>
           <section>
@@ -547,21 +642,6 @@
               <li><code>debug:permission</code></li>
               <li><code>debug:update</code></li>
             </ul>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Twig</h2>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>PHPUnit</h2>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Other Stuff</h2>
           </section>
         </section>
         <section>

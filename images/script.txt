@@ -7,6 +7,8 @@ Welcome to DrupalCon Vienna
 I hope you're having a good time.
 And that you're in the right room.
 
+Before we start let me introduce myself.
+
 ========================================
 **Credentials:**
 ========================================
@@ -37,7 +39,7 @@ We'll also see how by incorporating Symfony in Drupal, we've changed the way Dru
 **Credible Statement**
 ========================================
 Did you know that up until Drupal 7, all the PHP code in Drupal has homegrown and there was no external PHP Library?
-Whereas Drupal 8, when installed contains contains code from no less than 35 other PHP projects.
+Whereas Drupal 8, when installed, contains contains code from no less than 35 other PHP projects and symfony is just one of them.
 
 I hope I have your attention because that's something we'll look into in addition to various other topics that we'll over.
 
@@ -60,8 +62,8 @@ We'll start by taking a look at status of Drupal Development before D8.
 Then we'll go through a brief overview of Symfony
 Symfony components in Drupal:
 - How they're used and what they've changed
-Other stuff in Drupal:
-Hopes and Wants
+Drupal - New Philosophy
+Personal thoughts
 
 
 ==================================================================
@@ -432,6 +434,8 @@ Among other things, it is responsible for:
 2. Adding services to it, so that they are available for use later.
 3. Passing the request handling to routing system
 -----------------------------------------------------------
+
+The components that we covered together form the core pipeline of Drupal.
 
 ======================================================
 **Drupal Console:**
