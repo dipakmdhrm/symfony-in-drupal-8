@@ -36,20 +36,12 @@ And while that will mostly involve talking about the Symfony components, it won'
 We'll also see how by incorporating Symfony in Drupal, we've changed the way Drupal is developed. How Drupal is more modern tool than ever before. And how it has brought us closer to the rest of PHP world.
 
 ========================================
-**Credible Statement**
-========================================
-Did you know that up until Drupal 7, all the PHP code in Drupal has homegrown and there was no external PHP Library?
-Whereas Drupal 8, when installed, contains contains code from no less than 35 other PHP projects and symfony is just one of them.
-
-I hope I have your attention because that's something we'll look into in addition to various other topics that we'll over.
-
-========================================
 **Who are you?**
 ========================================
 But before that let's talk about who are you i.e. if you're really in right room:
-  You're a Drupal 7 developer
-  You're a Drupal 8 beginner
-  You want to learn something about Symfony Enthusiast
+  You're a Drupal 7 developer and by that I mean you've written custom modules in PHP.
+  You're a Drupal 8 beginner 
+  You want to learn about Symfony
   And you understand OOP Basics.
     - At least objects.
 
@@ -70,39 +62,46 @@ Personal thoughts
 ===================== Drupal Before Drupal 8 =====================
 ==================================================================
 *Drupal island and the NIE Mindset:*
-Before Drupal 8 if Drupal Development was our specialty, that meant we were a good Drupal Developer. It did not necessarily make us a good PHP developer.
+Let's start this section with a question.
+How many of us have tried our hands on Symfony? or on Drupal 8 custom development?
+And how many have felt like this?
+---------------------------------------------------
+Do we have any Symfony developer here who's not a regular Druupal dev?
+=========
+Did you ever try your hands on Drupal &?
+Did you feel like this?
+Did you feel the same with another PHP framework say Zend, or Laravel?
+=========
+No problem I talked a couple symfony developers. 
+And they said they had similar experience when trying D7.
+You know why that happens?
 ---------------------------------------------------
 
-In fact, if we wanted to work on some other PHP project, say Symfony, we needed to learn a whole new skillset.
+Because Drupal is unique. That in middle is Drupal. And rest are Symfony, Zend laravel etc. Because, Drupal has its own way of doing almost everything. It is completely different than the rest of PHP world.
+---------------------------------------------------
+And a major reason for this?
+Drupal saw some major development during PHP4 era.
+And even though PHP 5 war released a long time ago with OOP it wasn't until PHP 5.3, that PHP fully provided good OOP support.
+And as Drupal initially chose to stick to procedural PHP it became harder from Drupal to shift to a OO. This resulted in Drupal falling behind and develop solution in it's own although outdated ways.
+---------------------------------------------------
+Also, in Software and especially in OSS, we look for existing solutions first to solve a problem. 
+But this harder for Drupal because existing solution provided by other system like Symfony or others were developed in a programming paradigm completely different than that of Drupal.
+
+This resulted in Drupal being marked as a project with NIH philosophy.
+
+This was also called as Drupal living on an island away from PHP world... An island that Drupal needed to get off of.
 ---------------------------------------------------
 
-And, it was the same way around... A person with different skillset, again say Symfony, if they want to work on Drupal 7, they need to learn it from ground up and as a result learn stuff that's exclusive to Drupal.
----------------------------------------------------
+**Drupal 8: Getting off the island and PIE;**
+And with Development of Drupal 8, Drupal community started to see the opportunity to change this perception.
 
-And That was because Drupal had a unique way of doing almost everything. It was completely different than the rest of PHP world.
----------------------------------------------------
+To keep Drupal modern, we needed to build Drupal 8 using modern PHP. OOP and all.
 
-PHP had evolved. With PHP 5.3, PHP had all new shiny OOP concepts that almost every other PHP project had started using. But not Drupal.
----------------------------------------------------
+And instead of building everything from scratch, this time Drupal decided to use existing soluions from other projects.
 
-In software world, especially in Open Source when solving problems, we look for existing solutions. These could be existing tools or design patterns that we can incorporate in our projects so as to not re-invent the wheel.
+And this philosophy is called PIE.
 
-But that's not something Drupal was doing.
----------------------------------------------------
-
-A major part of Drupal Development was done around the PHP4 era. To overcome the limitations of PHP4 Drupal was heavily hacked and a lots of workarounds were added to it. And this in turn made it hard to adopt modern PHP standards. And that was in a big way responsible for "Not Invented Here" mindset in Drupal community. Because we were too busy working around the existing workarounds.
----------------------------------------------------
-
-In a way, Drupal had been living on it's own island. Drupal needed to get off this island and join the PHP Mainland.
----------------------------------------------------
-
-**Drupal 8: Getting off the island and PFE;**
-And that's what started happening with development of Drupal 8.
-
-Some prominent and influential members in Drupal community started realizing that Drupal was falling behind. Drupal needed to evolve and adapt to the modern world of PHP.
-
-Due to hard work of these people, Drupal has now embraced the Proudly Found Elsewhere mindset.
-It now uses code from a number of other PHP projects.
+Drupal now uses code from a number of other PHP projects.
 Some of them are:
 1. Symfony
 2. Guzzle

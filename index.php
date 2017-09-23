@@ -8,7 +8,7 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h2>Symfony in Drupal 8:</h2>
+          <h1>Symfony in Drupal 8:</h1>
           How much and what does Drupal inherit from Symfony?
           <br>
           <br>
@@ -34,16 +34,12 @@
           </div>
         </section>
         <section>
-          <h2>Symfony in Drupal 8:</h2>
+          <h1>Symfony in Drupal 8:</h1>
           How much and what does Drupal inherit from Symfony?
           <br>
           <br>
           <br>
           <h3>Dipak Yadav</h3>( @dipakmdhrm )
-        </section>
-        <section>
-          <h2>D7 &nbsp;1 &nbsp;&nbsp;-&nbsp;&nbsp; 38&nbsp; D8</h2>
-          <img src="images/35-projects.png">
         </section>
         <section>
           <h2>Who are you?</h2>
@@ -76,40 +72,33 @@
             <h2>Drupal development before Drupal 8</h2>
           </section>
           <section>
-            <h3>Drupal Island and NIE</h3>
-            <img data-src="images/Yeah-Drupal!.jpg">
-          </section>
-          <section>
-            <h3>Drupal Island and NIE</h3>
+            <h3>Drupal developer trying Symfony</h3>
             <img data-src="images/Frustated.jpg">
           </section>
           <section>
-            <h3>Drupal Island and NIE</h3>
+            <h3>Symfony developer trying Drupal</h3>
             <img data-src="images/hooks-hooks-everywhere.jpg">
           </section>
           <section>
-            <h3>Drupal Island and NIE</h3>
+            <h3>The Drupal way</h3>
             <img data-src="images/different.jpg">
           </section>
           <section>
-            <h3>Drupal Island and NIE</h3>
+            <h3>Drupal & PHP</h3>
             <img data-src="images/php-oop.png">
           </section>
           <section>
             <h3>Drupal Island and NIE</h3>
-            <img data-src="images/problem-solving.jpg">
-          </section>
-          <section>
-            <h3>Drupal Island and NIE</h3>
-            NIE = Not Invented Here
+            <ul>
+              <li>NIE = Not Invented Here</li>
+            </ul>            
             <img data-src="images/nie.jpg">
           </section>
           <section>
-            <h3>Drupal Island and NIE</h3>
-            <img data-src="images/drupal-island-php-mainland.png">
-          </section>
-          <section>
-            <h3>Getting off the island and PFE</h3>
+            <h3>Drupal 8 and PIE</h3>
+            <ul>
+              <li>PIE: Proudly Invented Elsewhere</li>
+            </ul>
             <img data-src="images/pfe-projects-in-drupal.png">
           </section>
         </section>
@@ -186,7 +175,7 @@
         </section>
         <section>
           <section>
-            <h1>Symfony Components in Drupal 8</h1>
+            <h1>Symfony Components in <br>Drupal 8</h1>
           </section>
           <section>
             <h3>Symfony Components in Drupal</h3>
@@ -731,7 +720,7 @@
           <section>
             <h3>More standard compliance</h3>
             <ul>
-              <li>Eg. PSR-2 & PSR-2</li>
+              <li>Eg. PSR-1 & PSR-2</li>
             </ul>
           </section>
         </section>
@@ -744,7 +733,8 @@
           </ul>
         </section>
         <section>
-          <h1>Discussions?</h1>
+          <h1>Thank You!</h1>
+          <h3>Questions || Discussions?</h3>
         </section>
       </div>
     </div>
