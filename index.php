@@ -62,7 +62,6 @@
               <li>Drupal development before Drupal 8</li>
               <li>Introduction to Symfony</li>
               <li>Symfony Components in Drupal 8</li>
-              <li>Drupal 8: Philosophical Changes</li>
               <li>Personal thoughts</li>
             </ul>
           </div>
@@ -84,7 +83,7 @@
             <img data-src="images/different.jpg">
           </section>
           <section>
-            <h3>Drupal & PHP</h3>
+            <h3>Drupal & OOP PHP</h3>
             <img data-src="images/php-oop.png">
           </section>
           <section>
@@ -171,6 +170,19 @@
           <section>
             <h3>Symfony Events</h3>
             <img data-src="images/symfony-events.png">
+          </section>
+          <section>
+            <h3>Drupal inherits Symfony Community</h3>
+            <ul>
+              <li>Dedicated Symfony Track in DrupalCon</li>
+              <li>Prominent members from Symfony Community
+                <ul>
+                  <li>Ryan Weaver, KnpUniversity</li>
+                  <li>Nicolas Grekas, Blackfir.IO (previosly Sensiolabs)</li>
+                  <li>Michelle Sanver, Liip</li>
+                </ul>
+              </li>
+            </ul>
           </section>
         </section>
         <section>
@@ -262,6 +274,14 @@
             <h3>API support</h3>
             <ul>
               <li>Drupal 7: No support for creating RESTful APIs</li>
+              <ul>
+                <li>Almost always GET requests.</li>
+                <li>Poor support for handling other methods like:
+                  <ul>
+                    <li>POST, PUT, DELETE etc.</li>
+                  </ul>
+                </li>
+              </ul>
               <li>Drupal 8: API first</li>
             </ul>
           </section>
@@ -529,7 +549,7 @@
                 </ul>
               </li>
               <li>
-                In Drupal, mostly used for serialization of objects.
+                In Drupal, mostly used for serialization of objects and arrays.
               </li>
             </ul>
           </section>
@@ -542,7 +562,7 @@
                   <li>Serialization, RESTful Web Services</li>
                 </ul>
               </li>
-              <li>Serializer component for converting objects to JSON/XML
+              <li>Serializer component for encoding objects to JSON/XML
                 <ul>
                   <li>And vice versa</li>
                 </ul>
@@ -634,6 +654,10 @@
           </section>
         </section>
         <section>
+          <h1>Personal Thoughts</h1>
+          <h2>Symfony's Philosphies in Drupal that I love</h2>
+        </section>
+        <section>
           <section>
             <h2>Easier Upgrades</h2>
           </section>
@@ -679,7 +703,7 @@
                   <li>Remove deprecated stuff</li>
                 </ul>
               </li>
-            </ul>
+]            </ul>
           </section>
           <section>
             <h3>Upgrade policy advantages</h3>
@@ -698,6 +722,20 @@
             <h2>Standard Compliance</h2>
           </section>
           <section>
+            <ul>
+              <li>PHP-FIG
+                <ul>
+                  <li>PHP - Framework Interoperability Group</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>PSRs - PHP Standards Recommendations</li>
+                </ul>
+              </li>
+            </ul>            
+          </section>
+          <section>
             <h3>Adoption of PSRs</h3>
             <ul>
               <li>PSR 4</li>
@@ -706,23 +744,22 @@
           </section>
         </section>
         <section>
-          <section>
-            <h2>Hopes & wants</h2>
-          </section>
-          <section>
-            <h3>Symfony's philosophy of loosely coupled independent parts</h3>
-            <ul>
-              <li>Drupal sub-systems as loosely coupled libraries
-                <ul><li>Available for use in other PHP projects</li></ul>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>More standard compliance</h3>
-            <ul>
-              <li>Eg. PSR-1 & PSR-2</li>
-            </ul>
-          </section>
+          <h1>Personal Thoughts</h1>
+          <h2>Symfony's Philosphies in Drupal that I love</h2>
+        </section>
+        <section>
+          <h3>Symfony's philosophy of loosely coupled independent parts</h3>
+          <ul>
+            <li>Drupal sub-systems as loosely coupled libraries
+              <ul><li>Available for use in other PHP projects</li></ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>More standard compliance</h3>
+          <ul>
+            <li>Eg. PSR-1 & PSR-2</li>
+          </ul>
         </section>
         <section>
           <h2>Takeaways</h2>

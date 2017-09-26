@@ -66,7 +66,7 @@ Let's start this section with a question.
 How many of us have tried our hands on Symfony? or on Drupal 8 custom development?
 And how many have felt like this?
 ---------------------------------------------------
-Do we have any Symfony developer here who's not a regular Druupal dev?
+Do we have any Symfony developer here who's not a regular Drupal dev?
 =========
 Did you ever try your hands on Drupal &?
 Did you feel like this?
@@ -77,14 +77,16 @@ And they said they had similar experience when trying D7.
 You know why that happens?
 ---------------------------------------------------
 
-Because Drupal is unique. That in middle is Drupal. And rest are Symfony, Zend laravel etc. Because, Drupal has its own way of doing almost everything. It is completely different than the rest of PHP world.
+Because Drupal is unique. That guy in middle is Drupal. And rest are Symfony, Zend laravel etc. Because, Drupal has its own way of doing almost everything. It is completely different than the rest of PHP world.
 ---------------------------------------------------
 And a major reason for this?
 Drupal saw some major development during PHP4 era.
-And even though PHP 5 war released a long time ago with OOP it wasn't until PHP 5.3, that PHP fully provided good OOP support.
-And as Drupal initially chose to stick to procedural PHP it became harder from Drupal to shift to a OO. This resulted in Drupal falling behind and develop solution in it's own although outdated ways.
+And even though PHP 5 war released a long time ago with OO concepts it wasn't until PHP 5.3, that PHP fully provided good OOP support.
+And it was a mojor reason that Drupal initially chose to stick to procedural PHP. But then it became harder from Drupal to shift to a OO.
+Drupal is build on PHP. PHP now provides very good OOP support.
+This resulted in Drupal falling behind and develop solution in it's own although outdated ways.
 ---------------------------------------------------
-Also, in Software and especially in OSS, we look for existing solutions first to solve a problem. 
+Also, in Software and especially in Opne Source, we look for existing solutions first to solve a problem. 
 But this harder for Drupal because existing solution provided by other system like Symfony or others were developed in a programming paradigm completely different than that of Drupal.
 
 This resulted in Drupal being marked as a project with NIH philosophy.
@@ -435,6 +437,28 @@ Among other things, it is responsible for:
 -----------------------------------------------------------
 
 The components that we covered together form the core pipeline of Drupal.
+
+======================================================
+**Serializer:**
+======================================================
+Serializer component facilitates serializtion.
+
+Serialization is the process of translating data structures like Objects or arrays, into a format that is easy to store or transmit. And vice versa.
+One application of such format would be tranmitting data betweent Drupal and a mobile app.
+I am pretty sure PHP data structures and Android/IOS data structure are not directly compatible. So we need serialization to have a format in between that both can use. Eg. JSON/XML
+
+In Drupal the PHP data structures are often objects and arrays.
+
+Symfony's serializer component is heavily used in creating Drupal 8's RESTful APIs.
+In Drupal 8 we have these two core modules for eposing APIs.
+Serialization and RESTful Web Services.
+Serialization module extends serializer to provide serialization for Drupal's data structures like Entities,
+
+======================================================
+**Validator:**
+======================================================
+
+
 
 ======================================================
 **Drupal Console:**
