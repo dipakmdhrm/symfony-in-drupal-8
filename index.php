@@ -87,17 +87,11 @@
             <img data-src="images/php-oop.png">
           </section>
           <section>
-            <h3>Drupal Island and NIE</h3>
-            <ul>
-              <li>NIE = Not Invented Here</li>
-            </ul>            
+            <h3>"Not Invented Here" & "Drupal Island"</h3>
             <img data-src="images/nie.jpg">
           </section>
           <section>
-            <h3>Drupal 8 and PIE</h3>
-            <ul>
-              <li>PIE: Proudly Invented Elsewhere</li>
-            </ul>
+            <h3>Drupal 8 and "Proudly Invented Elsewhere"</h3>
             <img data-src="images/pfe-projects-in-drupal.png">
           </section>
         </section>
@@ -178,7 +172,7 @@
               <li>Prominent members from Symfony Community
                 <ul>
                   <li>Ryan Weaver, KnpUniversity</li>
-                  <li>Nicolas Grekas, Blackfir.IO (previosly Sensiolabs)</li>
+                  <li>Nicolas Grekas, Blackfir.IO (previously Sensiolabs)</li>
                   <li>Michelle Sanver, Liip</li>
                 </ul>
               </li>
@@ -360,8 +354,12 @@
             <br>
           </section>
           <section>
-            <h3>EventDispatcher: registering listeners</h3>
+            <h3>EventDispatcher: adding listeners</h3>
             <img data-src="images/bruh-listeners.jpg">
+          </section>
+          <section>
+            <h3>EventDispatcher: adding listeners : code</h3>
+            <img data-src="images/event-dispatcher-add-listener-code.png">
           </section>
           <section>
             <h3>EventDispatcher: event</h3>
@@ -372,7 +370,11 @@
             <img data-src="images/bruh-dispatching.jpg">
           </section>
           <section>
-            <h3>Drupal 8</h3>
+            <h3>EventDispatcher: dispatching event : code</h3>
+            <img data-src="images/event-dispatcher-dispatch-event-code.png">
+          </section>
+          <section>
+            <h3>Event Dispatcher Overview</h3>
             <img data-src="images/events-dispatcher-overview.jpg">
           </section>
           <section>
@@ -463,7 +465,7 @@
           <section>
             <h3>Dependency Injection</h3>
             <ul>
-              <li>Evething (almost) is object</li>
+              <li>Everything (almost) is object</li>
               <li>Objects use objects</li>
               <li>Objects are dependent on objects</li>
             </ul>
@@ -528,12 +530,16 @@
             <img data-src="images/drupal-8-index-php-kernel.png">
           </section>
           <section>
-            <h3>DrupalKernel</h3>
-            <ul>
-              <li>Creating the service container</li>
-              <li>Adding services to it, so that they are available for use later</li>
-              <li>Passing the request handling to appropriate system</li>
-            </ul>
+            <h3>DrupalKernel creates service container</h3>
+            <img data-src="images/kernel-initialize-container.png">
+          </section>
+          <section>
+            <h3>DrupalKernel adds services to container</h3>
+            <img data-src="images/kernel-add-service.png">
+          </section>
+          <section>
+            <h3>DrupalKernel passes control to request handler</h3>
+            <img data-src="images/kernel-handle-request.png">
           </section>
         </section>
         <section>
@@ -609,7 +615,7 @@
             <h3>YAML</h3>
             <ul>
               <li>YAML: YAML Ain't Markup Language</li>
-              <li>Humal readable serialization language</li>
+              <li>Human readable serialization language</li>
               <li>Commonly used to store configuration</li>
             </ul>
           </section>
@@ -655,7 +661,7 @@
         </section>
         <section>
           <h1>Personal Thoughts</h1>
-          <h2>Symfony's Philosphies in Drupal that I love</h2>
+          <h2>Symfony's Philosophies in Drupal that I love</h2>
         </section>
         <section>
           <section>
@@ -729,8 +735,9 @@
                 </ul>
               </li>
               <li>
+                PSRs
                 <ul>
-                  <li>PSRs - PHP Standards Recommendations</li>
+                  <li>PHP Standards Recommendations</li>
                 </ul>
               </li>
             </ul>            
@@ -745,7 +752,7 @@
         </section>
         <section>
           <h1>Personal Thoughts</h1>
-          <h2>Symfony's Philosphies in Drupal that I love</h2>
+          <h2>Symfony's Philosophies that I want in Drupal</h2>
         </section>
         <section>
           <h3>Symfony's philosophy of loosely coupled independent parts</h3>
@@ -764,7 +771,7 @@
         <section>
           <h2>Takeaways</h2>
           <ul>
-            <li>Drupal uses symfony components, not symfony framework</li>
+            <li>Drupal uses Symfony components, not Symfony framework</li>
             <li>HttpFoundation, Routing help Drupal 8 become API-first</li>
             <li>HttpFoundation, Routing, EventDispatcher, DependencyInjection & DrupalKernal form the core of Drupal 8</li>
           </ul>
