@@ -128,7 +128,7 @@
             <ul>
               <li>Web Application Framework built using 35 Symfony components</li>
               <ul>
-                <li>Plus few other PHP libraries like Twig, Swiftmailer etc</li>
+                <li>Plus a few other PHP libraries like Twig, Swiftmailer etc</li>
               </ul>
               <li>Fully functional Application.
               <ul>
@@ -147,7 +147,7 @@
               </li>
               <li>Symfony Framework:
                 <ul>
-                  <li>Meant to be Customized and Extended from ground-up.</li>
+                  <li>Meant to be customized and extended from ground-up.</li>
                 </ul>
               </li>
             </ul>
@@ -172,7 +172,7 @@
               <li>Prominent members from Symfony Community
                 <ul>
                   <li>Ryan Weaver, KnpUniversity</li>
-                  <li>Nicolas Grekas, Blackfir.IO (previously Sensiolabs)</li>
+                  <li>Nicolas Grekas, Blackfir.io (previously Sensiolabs)</li>
                   <li>Michelle Sanver, Liip</li>
                 </ul>
               </li>
@@ -188,7 +188,7 @@
             <ul>
               <li>HttpFoundation</li>
               <li>Routing</li>
-              <li>EventsDispatcher</li>
+              <li>EventDispatcher</li>
               <li>DependencyInjection</li>
               <li>HttpKernel</li>
               -------------------
@@ -315,11 +315,11 @@
             <img data-src="images/drupal-8-index-php-routing.png">
           </section>
           <section>
-            <h3>Basic of Routing</h3>
+            <h3>Basics of Routing</h3>
             <img data-src="images/routing-overview.jpg">
           </section>
           <section>
-            <h3>Basic of Routing Component</h3>
+            <h3>Basics of Routing Component</h3>
             <img data-src="images/routing-component-basics.jpg">
           </section>
         </section>
@@ -346,7 +346,7 @@
               <li>Facilitates communication between objects</li>
               <li>Events:
                 <ul>
-                  <li><em>"Event is any action that an object needs to communicate to other objects"</em></li>
+                  <li><em>"An Event is any action that an object needs to communicate to other objects"</em></li>
                   <li>Eg. Node deletion</li>
                 </ul>
               </li>
@@ -358,7 +358,7 @@
             <img data-src="images/bruh-listeners.jpg">
           </section>
           <section>
-            <h3>EventDispatcher: adding listeners : code</h3>
+            <h3>EventDispatcher: adding listeners: code</h3>
             <img data-src="images/event-dispatcher-add-listener-code.png">
           </section>
           <section>
@@ -370,7 +370,7 @@
             <img data-src="images/bruh-dispatching.jpg">
           </section>
           <section>
-            <h3>EventDispatcher: dispatching event : code</h3>
+            <h3>EventDispatcher: dispatching event: code</h3>
             <img data-src="images/event-dispatcher-dispatch-event-code.png">
           </section>
           <section>
@@ -405,11 +405,10 @@
             <ul>
               <li>Hooks</li>
               <li>Events</li>
-              <li>Best of both world... But is it??</li>
+              <li>Best of both world... but is it??</li>
             </ul>
           </section>
         </section>
-
         <section>
           <section>
             <h2>DependencyInjection</h2>
@@ -498,10 +497,10 @@
             </ul>
           </section>
           <section>
-            <h3>Drupal 8: 2 containers</h3>
+            <h3>Drupal 8: Two Containers</h3>
             <ul>
-              <li>Dependency Injection container: Preferred & recommended</li>
-              <li>Legacy container: For non-OO parts</li>
+              <li>Dependency Injection container: preferred & recommended</li>
+              <li>Legacy container: for non-OO parts</li>
             </ul>
           </section>
           <section>
@@ -709,7 +708,7 @@
                   <li>Remove deprecated stuff</li>
                 </ul>
               </li>
-]            </ul>
+            </ul>
           </section>
           <section>
             <h3>Upgrade policy advantages</h3>
@@ -779,6 +778,10 @@
         <section>
           <h1>Thank You!</h1>
           <h3>Questions || Discussions?</h3>
+        </section>
+        <section>
+          <h1>Rate the session</h1>
+          <h3><a href="https://events.drupal.org/vienna2017/sessions/symfony-drupal-8-how-much-and-what-does-drupal-inherits-symfony">Link to session</a></h3>
         </section>
       </div>
     </div>
